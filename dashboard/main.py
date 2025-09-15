@@ -1,3 +1,5 @@
+from modules.budget.views import *
+
 def main():
     while True:
         print("#####################################")
@@ -12,10 +14,10 @@ def main():
         print("[6] - ❌ Quitter ")
         print("")
         
-        choice = input("> Votre choix : ")
+        choice = input(" > Votre choix : ")
 
         if choice == "1":
-            pass
+            main_budget_menu()
         elif choice == "2":
             pass
         elif choice == "3":
