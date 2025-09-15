@@ -12,16 +12,16 @@ Un tableau de bord personnel en **Python** pour mieux gérer ma vie au quotidien
 ## ✨ Fonctionnalités
 
 - 💵 **Budget Tracker** : ajoute mes revenus/dépenses et visualise mon solde.
-- 🏃 **Sport & Santé** : garde un suivi de tes séances et objectifs.
-- 📆 **Habitudes** : construis de bonnes routines et vois ta progression.
-- 🔎 **Veille / YouTube** : note ce que tu apprends et centralise ta veille perso.
+- 🏃 **Sport & Santé** : garde un suivi de mes séances et objectifs.
+- 📆 **Habitudes** : contruire de bonnes routines et visualisation de ma progression.
+- 🔎 **Veille / YouTube** : note ce que j'apprends et centralise ma veille perso.
 - 🔄 **Mises à jour automatiques** : récupère les nouveautés directement avec `git pull`.
 
 ---
 
 ## 🔄 Mises à jour
 
-Depuis le menu principal, choisis :
+Depuis le menu principal :
 
 ```
 
@@ -40,7 +40,3 @@ Depuis le menu principal, choisis :
 - [ ] Interface **web Flask / FastAPI**
 
 👨‍💻 Développé avec ❤️ par \[Nirkrolm72650]
-
-```
-
-```
