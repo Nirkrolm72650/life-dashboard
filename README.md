@@ -1,4 +1,3 @@
-```markdown
 # 🌍 LifeDashboard
 
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
@@ -23,6 +22,7 @@ Un tableau de bord personnel en **Python** pour mieux gérer ma vie au quotidien
 ## 🔄 Mises à jour
 
 Depuis le menu principal, choisis :
+
 ```
 
 5. Vérifier les mises à jour
@@ -35,14 +35,11 @@ Depuis le menu principal, choisis :
 
 ## 🛠️ Roadmap
 
-* [x] Version console interactive
-* [ ] Passage à une base de données **SQLite**
-* [ ] Interface **web Flask / FastAPI**
+- [x] Version console interactive
+- [ ] Passage à une base de données **SQLite**
+- [ ] Interface **web Flask / FastAPI**
 
 👨‍💻 Développé avec ❤️ par \[Nirkrolm72650]
-
-
-```
 
 ```
 
