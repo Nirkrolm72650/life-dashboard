@@ -1,9 +1,10 @@
 # modules/budget/views.py
 import os
 import time
-from core.utils import create_file
+from datetime import datetime
+from core.utils import create_file, append_row, read_csv
 
-DEFAULT_HEADER = ["Date", "Description", "Catégorie", "Montant"]
+DEFAULT_HEADER = ["Date", "Description", "Catégorie", "Montant", "Total"]
 DATA_DIR = os.path.join(os.getcwd(), "data")
 DEFAULT_FILE = os.path.join(DATA_DIR, "budget.csv")
 
@@ -19,6 +20,26 @@ def ensure_budget_file(path=None):
     filename = os.path.basename(path)
     create_file(dirpath, filename, header=DEFAULT_HEADER)
     return path
+
+def add_expense(path=None):
+    path = ensure_budget_file(path)
+    date = input("Entrer la date (Format : JJ/MM/AAAA) [vide = aujourd'hui] : ").strip()
+    # Si [date] est vide, on met la date d'aujour'hui
+    if not date:
+        date = datetime.now().strftime("%d-%m-%Y")
+    
+    description = input("Entrer la description : ").strip()
+    category = input("Entrer la catégorie : ").strip()
+    while True:
+        montant = input("Entrer le montant (€) : ").strip().replace(",", ".")
+        try:
+            montant = float(montant)
+            break
+        except ValueError:
+            print("Montant invalide - recommencez.")
+
+    append_row(path, [date, description, category, f"{montant:.2f}"])
+
 
 def main_budget_menu():
     while True:
